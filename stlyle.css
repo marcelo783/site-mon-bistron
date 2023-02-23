@@ -142,6 +142,10 @@ body{
 
 }
 
+.test a {
+  color: #000;
+}
+
 
 /*botão*/
 .btn {
@@ -152,6 +156,12 @@ body{
   min-height: 2vh;
   min-width: 10vh;
   padding: 2vh;
+
+}
+
+.btn:focus{
+  background-color: #e9ab26;
+  transition: all 250ms ease-in-out;
 }
 
 @media (max-width: 415px) {
@@ -205,7 +215,7 @@ body{
   padding: 2rem;
   height: 228vh;
   width: 74vw;
-  background-color: aqua;
+  background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -223,7 +233,7 @@ body{
   justify-content: space-between;
   flex-direction: column;
   padding: 1.5rem;
-  background-color: rgb(136, 0, 255);
+  background-color: rgb(169, 161, 161);
   margin: 1.7rem;
   border-radius: 0.6rem;
   border: solid #000 2px;
@@ -259,3 +269,9 @@ font-size: 1.6rem;
 border-radius: 0.6rem;
 border: none;
 }
+
+.padding-manual {
+scroll-padding-top: 38%;
+
+
+  }

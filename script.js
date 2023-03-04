@@ -12,11 +12,12 @@ function scrollToElement(secao) {
 
 
   });
-  console.log("passou");
+}
 
+function eventoClick(btn) {
+  document.querySelector(btn).addEventListener("click", () =>
+  document.querySelector(".frente").classList.add("evento"),
+  document.querySelector(".verso").classList.add("evento")
 
-
-
-
-
+);
 }

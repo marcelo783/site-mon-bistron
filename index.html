@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <header class="cbc">
-        <div>
-            <h1 class="mon-bt">Mon bistron</h1>
-        </div>
+    <header class="cabeçalho">
+
+           <img class="logo-mon-bistron" src="img/logo.jpeg" alt="">
+
         <div class="container">
 
             <div class="hamburger">
@@ -26,17 +26,16 @@
             <aside class="sidebar">
                 <nav>
                     <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Conta</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Carinho</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Local</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Configurações</a></li>
                     </ul>
                 </nav>
             </aside>
         </div>
 
-        <div class="test">
+        <div class="barra-opcoes">
          <a class="btn" href = "#quentes">Bebidas quentes</a>
 
            <a class="btn" href="#geladas">Bebidas geladas</a>
@@ -64,11 +63,23 @@
             <h2>Bebidas quentes</h2>
 
             <div class="item-secao-cardapio">
-                <img class="img-quentes" src="img/cafe1.jpg" alt="cafe1">
+
+                <div class="carta">
+
+                <img class="frente img-quentes" src="img/cafe1.jpg" alt="cafe1">
+
+                <div class="verso">
+                    <p>ewbeoiwnsnfoenvo eonvoe</p>
+
+                </div>
+
+                </div>
+
+
                 <h3>cafe1</h3>
                 <div class="ver">
                     <label for="">R$ 20,00</label>
-                    <input type="button" name="" id="btn-ver" value="Ver">
+                    <input type="button" name="" id="btn-ver" value="Ver" onclick="eventoClick('#btn-ver')">
                 </div>
             </div>
             <div class="item-secao-cardapio">
@@ -287,9 +298,14 @@
 
         </section>
 
-
     </main>
+
+    <footer>
+        <p>jdjdjd</p>
+    </footer>
+
 </body>
+
 <script src="script.js"></script>
 
 </html>

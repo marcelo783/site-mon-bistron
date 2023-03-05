@@ -304,7 +304,7 @@ height: 5vh;
 .btn-ver {
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 padding: 5px;
 cursor: pointer;
 height: 8vh;
@@ -369,20 +369,17 @@ scene {
 .card__face {
   position: absolute;
   border-radius: 10px;
-  height: 33vh;
-  width: 56vh;
-
   color: white;
   text-align: center;
   font-weight: bold;
-
   backface-visibility: hidden;
 }
 
 
 
 .card__face--back {
-  
+  padding: 1rem;
+  height: 29vh;
   background: #e89d2c;
   transform: rotateY(180deg);
 }
@@ -397,3 +394,8 @@ scene {
 padding: 0 15px;
 
 }
+
+
+
+
+

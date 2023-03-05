@@ -12,13 +12,15 @@ html {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-family: Montserrat,sans-serif;
+  font-weight: lighter;
 }
 
 body{
   width: 100%;
   height:150vh;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #dcd6d6;
   overflow-y: scroll;
 
 }
@@ -71,6 +73,8 @@ body{
   box-shadow: none;
 }
 
+
+
 .sidebar{
   width: 20rem;
   height: 100%;
@@ -87,10 +91,16 @@ body{
 }
 
 .menu{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 20vh;
+
+  height: 56vh;
 }
 
 .menu-item{
@@ -112,25 +122,31 @@ body{
 
 
 .cabeçalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color:#6E1013;
   position: fixed;
   width: 100%;
   z-index: 99999;
-  height: 12vh;
+  height: 27vh;
+
 
 }
 
 
 .logo-mon-bistron {
-  height: 8vh;
-  width: 16vw;
+ padding-top: 3vh;
+ padding-left: 2vh;
+  height: 10vh;
+  width: 26vw;
 }
 
 
 .mon-bt {
   font-size: 38px;
   display: flex;
-  color: #D6AC6B;
+  color:  #D6AC6B;
   height: 100px;
   align-items: center;
   margin-left: 10px;
@@ -163,7 +179,7 @@ body{
   background-color: #dbd8d1;
   border-radius: 50vh;
   border: 2px solid rgb(27, 26, 26);
-  font-size: 1.6vw;
+  font-size: 1rem;
   min-height: 2vh;
   min-width: 10vh;
   padding: 2vh;
@@ -198,7 +214,7 @@ body{
    align-items: center;
    width: 100%;
    height: 16vw;
-   background-color: #fff;
+   background-color: #dcd6d6;
 
  }
 
@@ -231,10 +247,12 @@ body{
   margin: 1rem auto;
   padding: 2rem;
   height: 228vh;
-  width: 74vw;
+  width: 83vw;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 7px #00000087;
 }
 
 .secao-cardapio h2 {
@@ -250,10 +268,11 @@ body{
   justify-content: space-between;
   flex-direction: column;
   padding: 1.5rem;
-  background-color: rgb(169, 161, 161);
+  background-color: rgb(219, 219, 219);
   margin: 1.7rem;
   border-radius: 0.6rem;
-  border: solid #000 2px;
+
+  box-shadow: 1px 1px 7px #00000087;
 
 
 }
@@ -262,6 +281,7 @@ body{
 .item-secao-cardapio h3 {
 text-align: center;
 height: 5vh;
+
 
 }
 
@@ -330,4 +350,17 @@ scroll-padding-top: 38%;
 .evento{
   transform: rotateY(180deg);
 
+}
+
+
+.icones-img{
+  margin: 2vh;
+  height: 10vh;
+  width: 10vh;
+}
+
+footer {
+ width: 100%;
+ height: 15vh;
+ background-color:#605d5ddd;
 }

@@ -301,11 +301,15 @@ height: 5vh;
 
 }
 
-#btn-ver {
+.btn-ver {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px;
 cursor: pointer;
 height: 8vh;
-width: 17vh;
-font-size: 1.6rem;
+width: 20vh;
+font-size: 1.2rem;
 border-radius: 0.6rem;
 border: none;
 }
@@ -323,34 +327,9 @@ scroll-padding-top: 38%;
   color: #ffa;
   transform-style: preserve-3d;
   transition: transform 1.5s;
-  z-index: 0;
-}
-
-.carta{
-  cursor: pointer;
-  transform: rotateY(180deg);
-}
-
-.frente,.verso{
-  backface-visibility: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-}
-
-.verso{
-  transform: rotateY(180deg);
-  background-color: rgb(7, 125, 121);
-}
-
-.evento{
-  transform: rotateY(180deg);
 
 }
+
 
 
 .icones-img{
@@ -363,4 +342,58 @@ footer {
  width: 100%;
  height: 15vh;
  background-color:#605d5ddd;
+}
+
+
+scene {
+  display: inline-block;
+
+/*   border: 1px solid #CCC; */
+
+  perspective: 600px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  border-radius: 10px;
+  height: 33vh;
+  width: 56vh;
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+  backface-visibility: hidden;
+}
+
+
+
+.card__face--back {
+  
+  background: #e89d2c;
+  transform: rotateY(180deg);
+}
+
+
+.comprar-btn{
+  background-color:#62B261;
+
+}
+
+.btn-ver:nth-child(2){
+padding: 0 15px;
+
 }

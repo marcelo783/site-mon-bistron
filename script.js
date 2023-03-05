@@ -12,12 +12,12 @@ function scrollToElement(secao) {
 
 
   });
-}
+};
 
-function eventoClick(btn) {
-  document.querySelector(btn).addEventListener("click", () =>
-  document.querySelector(".frente").classList.add("evento"),
-  document.querySelector(".verso").classList.add("evento")
+var cards = document.querySelectorAll('.card');
 
-);
-}
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});

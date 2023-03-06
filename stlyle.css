@@ -191,11 +191,7 @@ body{
   transition: all 250ms ease-in-out;
 }
 
-@media (max-width: 415px) {
-  .btn {
-    font-size: 2.8vw;
-  }
-}
+
 
 
 .main  h2{
@@ -392,7 +388,6 @@ padding: 0 15px;
 
 
 footer{
-
   bottom: 0px;
   width: 100%;
   background: rgb(237, 232, 232);
@@ -529,10 +524,6 @@ footer{
 
 
 
-
-
-
-
 @media screen and (max-width: 900px){
   footer{
       position: fixed;
@@ -546,6 +537,20 @@ footer{
       margin: 5px 0;
   }
 }
+
+
+@media screen and (max-width: 700px) {
+ section{
+    width: 100%;
+
+  }
+}
+
+
+
+
+
+
 
 
 
